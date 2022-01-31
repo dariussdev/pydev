@@ -1,12 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'kb/static' 'kb/main.css' %}"/>
         {% if title %}
             <title> KB - {{title}} </title>
         {% else %}
             <title> KB  </title>
         {% endif %}
-    </head>
+</head>
 <body>
   {% block content %} {% endblock content %}
 </body>
