@@ -6,19 +6,14 @@
         {% csrf_token %}
         <fieldset class="form-group"  
             <legend class="text-muted border-bottom">
-                Register
+                Create article
             </legend>
             {{ form.as_p }}
         <fieldset>
         <div class="form-group">
-            <button type="submit" class="btn btn-outline-info">Sign In</button>
+            <button type="submit" class="btn btn-outline-info">Save</button>
         </div>
     </form>
-    <div class="border-top">
-        <small class="text-muted">
-            Already a user? <a href="#">Log in </a>
-        </small>
-    </div>
 </div>
    
 
